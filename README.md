@@ -6,6 +6,7 @@ SmartRoom - a network project.
 
 ### Using SmartConfig ESP:
 References application source code from:
+
 https://github.com/EspressifApp
 
 ![image](https://user-images.githubusercontent.com/48848418/72683768-c5a82980-3b0c-11ea-9044-275b8bb1b6bb.png)
