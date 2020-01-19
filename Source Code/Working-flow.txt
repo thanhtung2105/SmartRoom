@@ -1,0 +1,21 @@
+
+bool check_people_in()
+bool check_people_out()
+bool check_light_level()
+
+void loop()
+{
+	get temp, get humid from sensor();
+	check_people_in()	- if true -> count_people ++;
+	
+	check_people_out()   - if true -> count_people --;
+
+	if (count_people>0)
+		check_light_level()	- if dark -> write bulb-ON	- state bulb = 1
+				else -> write bulb-OFF	- state bulb = 0
+	else
+		write bulb-OFF	- state bulb = 0
+
+	send data to Http:// { temp - humid - count_people - state bulb }
+	delay(500);
+}
